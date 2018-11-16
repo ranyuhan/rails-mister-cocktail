@@ -18,10 +18,10 @@ results.each do |result|
 end
 
 # cocktail_database
-cocktail_url = 'https://raw.githubusercontent.com/teijo/iba-cocktails/master/recipes.json'
-cocktails_data = JSON.parse(open(cocktail_url).read)
+# cocktail_url = 'https://raw.githubusercontent.com/teijo/iba-cocktails/master/recipes.json'
+# cocktails_data = JSON.parse(open(cocktail_url).read)
 
-cocktails_data.first(10).each do |c|
-  Cocktail.create(name: c["name"])
-end
-puts "Created #{Cocktail.count} "
+# cocktails_data.first(10).each do |c|
+#   Cocktail.create(name: c["name"])
+# end
+# puts "Created #{Cocktail.count} "

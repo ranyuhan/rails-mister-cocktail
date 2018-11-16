@@ -11,7 +11,7 @@
       <div class="col-xs-12 col-sm-4">
         <%= link_to cocktail_path(cocktail) do %>
           <div class= "card">
-            <%= cocktail.photo %>
+            <%= cl_image_tag cocktail.photo, height: 200, width: 150, crop: :fill %>
             <%= cocktail.name %>
           </div>
         <% end %>
