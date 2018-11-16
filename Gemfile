@@ -34,6 +34,11 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+#cloudpics
+gem 'cloudinary'
+
+#upload files
+gem 'carrierwave', '~> 1.2'
 
 #front-end gem
 gem 'autoprefixer-rails'
