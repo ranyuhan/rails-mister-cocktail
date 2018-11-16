@@ -21,7 +21,7 @@ end
 cocktail_url = 'https://raw.githubusercontent.com/teijo/iba-cocktails/master/recipes.json'
 cocktails_data = JSON.parse(open(cocktail_url).read)
 
-cocktails_data.each do |c|
+cocktails_data.first(10).each do |c|
   Cocktail.create(name: c["name"])
 end
 puts "Created #{Cocktail.count} "
